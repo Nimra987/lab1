@@ -1,0 +1,35 @@
+#!/bin/bash
+limit=2
+if [ $# -eq $limit ]
+then 
+echo "Addittion : " `expr $1 + $2`
+echo "Subtraction : " `expr $1 - $2`
+echo "Multiplication : " `expr $1 \* $2`
+
+if [ $2 -ne 0 ]
+then
+echo "Division : " `expr $1 / $2`
+echo "Mod : " `expr $1 % $2 `
+else 
+
+echo "2nd number should be greater than 0"
+fi
+else
+
+read -p "Enter first number: " first
+read -p "Enter second number: " second
+
+echo "Addittion : " `expr $first + $second `
+echo "Subtraction : " `expr $first - $second `
+echo "Multiplication : " `expr $first \* $second `
+
+if [ $second -ne 0 ]
+then
+echo "Division : " `expr $first / $second`
+echo "Mod : " `expr $first  % $second `
+else 
+
+echo "2nd number should be greater than 0"
+
+fi
+fi

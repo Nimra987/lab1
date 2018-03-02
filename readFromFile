@@ -1,0 +1,6 @@
+#!/bin/bash
+arr=( `cat "inputFile" ` )
+echo "whole content of array : " ${arr[*]}
+echo "Length of array is: " ${#arr[*]}
+echo "3rd element : " ${arr[3]}
+echo "count 3rd element : " ${#arr[3]}
